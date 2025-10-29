@@ -12,6 +12,11 @@ def validate(text):
             close_counter = close_counter + 1
         if close_counter > open_counter:
             return False
-    return True
+    return close_counter == open_counter
 
 print(validate('()'))
+print(validate('())'))
+print(validate('(()'))
+print(validate('()()'))
+print(validate(')()('))
+print(validate('(()(()()))'))
