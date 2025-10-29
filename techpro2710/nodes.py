@@ -1,4 +1,19 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next
 
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def addElement(self,data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def removeHead(self):
+        self.head = self.head.next
 
 def length(self):
     counter = 1
